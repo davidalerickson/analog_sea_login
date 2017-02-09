@@ -4,11 +4,35 @@
     <meta charset="utf-8">
     <meta name="description" content="AnalogSea Login Page">
     <title>AnalogSea Login Page</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <main>
-      put stuff here
+      <div class="container">
+        <p class = "centerLine"><img class = "logoImage" src="images/logo.png" alt=""></p>
+        <div class="formDiv">
+          <form action="/signup/">
+            <h1 class = "formTitle centerLine">Sign up</h1>
+            <fieldset class = "fields">
+              <p>
+                <label for="email" id = "email">Email</label><br>
+                <input type="email" name="email" value="" placeholder="foo@bar.com" required>
+            </p>
+            <p>
+              <label for="password" id = "password">Password</label><br>
+              <input type="password" name="password" value="" placeholder="1234passwOrd" required>
+            </p>
+            </fieldset>
 
+            <p class = "centerLine">
+              <button class = "but_signup" type="submit" name="signup">Sign up</button>
+            <p>
+
+
+          </form>
+        </div><!--formDiv  -->
+        <p class = "centerLine loginLine">Already have an account? <a href = "/login">Log In</a></p>
+      </div><!--container  -->
     </main>
   </body>
 </html>
